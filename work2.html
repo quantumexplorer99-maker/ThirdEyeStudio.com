@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card Collections - Third Eye Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/Company_logo2.svg" alt="Third Eye Studio Logo">
+      <h1>Third Eye Studio</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="index.html#testimonials">Testimonials</a></li>
+        <li><a href="index.html#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Collection List -->
+  <section class="collection-list">
+    <h2>Business Card Collections</h2>
+    <p>Browse our curated card designs.</p>
+
+    <div class="collections-grid">
+
+      <!-- Collection 1 -->
+      <div class="collection-item" onclick="openCollection('collection1')">
+        <img src="images/work2/thumbnail2.png" alt="Luxury Golden Navy Card">
+        <h3>Luxury Golden on Navy</h3>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="collection-item" onclick="openCollection('collection2')">
+        <img src="images/work2/thumbnail2.png" alt="Minimal White & Black">
+        <h3>Minimal White & Black</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MODALS -->
+
+  <!-- Modal: Collection 1 -->
+  <div id="collection1" class="modal">
+    <span class="close" onclick="closeModal('collection1')">&times;</span>
+    <div class="modal-content">
+      <h2> Gold and Navy </h2>
+      <p>Use this card whenever you want to communicate prestige, creativity, and trust at first sight. It tells your clients that Third Eye Studio designs with vision and excellence.</p>
+      <div class="card-preview">
+        <img src="images/work1.png" alt="Front Side of Card">
+        <img src="images/work1back.png" alt="Back Side of Card">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Collection 2 -->
+  <div id="collection2" class="modal">
+    <span class="close" onclick="closeModal('collection2')">&times;</span>
+    <div class="modal-content">
+      <h2>Minimal White & Black</h2>
+      <p>A clean and modern business card for professionals.</p>
+      <div class="card-preview">
+        <img src="images/Untitled-2.png" alt="Front Side of Card">
+        <img src="images/Untitled-2.png" alt="Back Side of Card">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
