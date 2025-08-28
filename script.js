@@ -6,6 +6,9 @@ function closeModal(id) {
   document.getElementById(id).style.display = "none";
 }
 
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+
 // Close modal when clicking outside
 window.onclick = function(event) {
   const modals = document.querySelectorAll(".modal");
