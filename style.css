@@ -350,3 +350,41 @@ footer .socials a:hover {
   width: 50%;   /* each card takes 40% of modal width */
   max-width: 500px;
 }
+
+/* ===================== */
+/* Agenda Collections (work2.html) */
+/* ===================== */
+
+.agenda-selection {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.agenda-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.agenda-buttons button:hover {
+  background: var(--accent);
+}
+
+.agenda-display {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.agenda-display img {
+  max-width: 90%;   /* takes most of the screen width */
+  height: auto;     /* keeps proportions */
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* makes images pop */
+}
