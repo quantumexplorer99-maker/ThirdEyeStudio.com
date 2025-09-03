@@ -9,22 +9,25 @@
 <body>
 <!-- Third Eye Studio Website -->
 
+
 <!-- Navbar -->
-<header class="navbar">
+<nav class="navbar">
   <div class="logo">
     <img src="images/Company_logo2.svg" alt="Third Eye Studio Logo">
-    <h1>Third Eye Studio</h1>
+     <h1>Third Eye Studio</h1>
   </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#why-us">Why Us</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#footer">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <button class="hamburger" id="hamburger">&#9776;</button>
+</nav>
+
+<!-- Mobile Menu -->
+<ul class="nav-links" id="nav-links">
+  <li><a href="#services">Services</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#why-us">Why Us</a></li>
+  <li><a href="#testimonials">Testimonials</a></li>
+  <li><a href="#footer">Contact</a></li>
+</ul>
+
 
 <!-- Hero Section -->
 <section class="hero">
@@ -106,8 +109,17 @@
   </a>
 </div>
 
+       <div class="portfolio-item">
+  <a href="work3.html">
+    <img src="images/work3/thumbnail3.png" alt="Logos Preview">
+    <div class="overlay">
+      <h3>Logos</h3>
+      <p>Professional logos for your companies.</p>
+    </div>
+  </a>
+</div>
+
 <!-- Keep others as placeholders -->
-    <div class="portfolio-item">[Work 3]</div>
     <div class="portfolio-item">[Work 4]</div>
     <div class="portfolio-item">[Work 5]</div>
     <div class="portfolio-item">[Work 6]</div>
@@ -150,3 +162,23 @@
   </div>
   <p class="copyright">© 2025 Third Eye Studio. All rights reserved.</p>
 </footer>
+<!-- JavaScript -->
+<script>
+  // Mobile menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Auto-close menu when clicking a link
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Logos - Third Eye Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Third Eye Studio Logo">
+      <h1>Third Eye Studio</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Work3 Section -->
+  <section class="portfolio">
+    <h2>Our Logo Creations</h2>
+    <p>Each logo is designed with precision, creativity, and elegance.</p>
+    
+    <div class="portfolio-grid">
+      <div class="portfolio-item" onclick="openLogoModal('logo1')">
+        <img src="images/work3/dentistelogo1.png" alt="Luxury Golden Logo">
+        <h3>Luxury Golden Logo</h3>
+      </div>
+      <div class="portfolio-item" onclick="openLogoModal('logo2')">
+        <img src="images/work3/dentistelogo2.png" alt="Minimal Clean Logo">
+        <h3>Minimal Clean Logo</h3>
+      </div>
+      <div class="portfolio-item" onclick="openLogoModal('logo3')">
+        <img src="images/work3/bijoulogo1.png" alt="Modern Abstract Logo">
+        <h3>Modern Abstract Logo</h3>
+      </div>
+      <div class="portfolio-item" onclick="openLogoModal('logo4')">
+        <img src="images/work3//techlogo1.png" alt="Modern Abstract Logo">
+        <h3>Modern Abstract Logo</h3>
+      </div>
+      <div class="portfolio-item" onclick="openLogoModal('logo5')">
+        <img src="images/work3//saoplogo1.png" alt="Modern Abstract Logo">
+        <h3>Modern Abstract Logo</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="logo1" class="modal">
+    <span class="close" onclick="closeLogoModal('logo1')">&times;</span>
+    <div class="modal-content">
+      <h2>Luxury Golden Logo</h2>
+      <p>This logo represents elegance and prestige, perfect for luxury brands.</p>
+      <img src="images/work3/dentistelogo1.png" alt="Luxury Golden Logo">
+    </div>
+  </div>
+
+  <div id="logo2" class="modal">
+    <span class="close" onclick="closeLogoModal('logo2')">&times;</span>
+    <div class="modal-content">
+      <h2>Minimal Clean Logo</h2>
+      <p>A simple, timeless design for modern brands.</p>
+      <img src="images/work3/dentistelogo2.png" alt="Minimal Clean Logo">
+    </div>
+  </div>
+
+  <div id="logo3" class="modal">
+    <span class="close" onclick="closeLogoModal('logo3')">&times;</span>
+    <div class="modal-content">
+      <h2>Modern Abstract Logo</h2>
+      <p>Creative abstract style, designed to stand out.</p>
+      <img src="images/work3/bijoulogo1.png" alt="Modern Abstract Logo">
+    </div>
+  </div>
+
+  <div id="logo4" class="modal">
+    <span class="close" onclick="closeLogoModal('logo4')">&times;</span>
+    <div class="modal-content">
+      <h2>Modern Abstract Logo</h2>
+      <p>Creative abstract style, designed to stand out.</p>
+      <img src="images/work3/techlogo1.png" alt="Modern Abstract Logo">
+    </div>
+  </div>
+
+  <div id="logo5" class="modal">
+    <span class="close" onclick="closeLogoModal('logo5')">&times;</span>
+    <div class="modal-content">
+      <h2>Modern Abstract Logo</h2>
+      <p>Creative abstract style, designed to stand out.</p>
+      <img src="images/work3/saoplogo1.png" alt="Modern Abstract Logo">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

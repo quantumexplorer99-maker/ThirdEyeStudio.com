@@ -80,10 +80,25 @@ function showAgenda(agendaKey) {
   });
 }
 
+//================
+//Logo collections work3.html 
+//=======================
 
-//On Phone, the links hide inside a dropdown, and a hamburger (☰) button appears. Clicking it opens/closes the menu
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+function openLogoModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeLogoModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+
+
+
+// Mobile menu toggle
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
