@@ -9,24 +9,23 @@
 <body>
 <!-- Third Eye Studio Website -->
 
-
-<!-- Navbar -->
-<nav class="navbar">
+<header class="navbar">
   <div class="logo">
     <img src="images/Company_logo2.svg" alt="Third Eye Studio Logo">
-     <h1>Third Eye Studio</h1>
+    <h1>Third Eye Studio</h1>
   </div>
-  <button class="hamburger" id="hamburger">&#9776;</button>
-</nav>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<!-- Mobile Menu -->
-<ul class="nav-links" id="nav-links">
-  <li><a href="#services">Services</a></li>
-  <li><a href="#portfolio">Portfolio</a></li>
-  <li><a href="#why-us">Why Us</a></li>
-  <li><a href="#testimonials">Testimonials</a></li>
-  <li><a href="#footer">Contact</a></li>
-</ul>
+
 
 
 <!-- Hero Section -->
@@ -162,23 +161,3 @@
   </div>
   <p class="copyright">© 2025 Third Eye Studio. All rights reserved.</p>
 </footer>
-<!-- JavaScript -->
-<script>
-  // Mobile menu toggle
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-
-  // Auto-close menu when clicking a link
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
-  });
-</script>
-
-</body>
-</html>
