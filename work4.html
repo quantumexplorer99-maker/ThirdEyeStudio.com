@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Designs - Third Eye Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar (same as main site mobile version) -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Third Eye Studio Logo">
+      <h1>Third Eye Studio</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+<!-- Work 4 Content -->
+<section class="work4">
+  <h2>Graphic Design Creations</h2>
+  <p>Posters, banners, flyers, social media designs, and more.</p>
+
+  <div class="masonry-grid">
+
+    <div class="masonry-item" onclick="openGraphic('g1')">
+      <img src="images/work4/agencedevoyage3.png" alt="Graphic 1">
+    </div>
+
+    <div class="masonry-item" onclick="openGraphic('g2')">
+      <img src="images/work4/agencedevoyage2.png" alt="Graphic 2">
+    </div>
+
+    <div class="masonry-item" onclick="openGraphic('g3')">
+      <img src="images/work4/clichetfinal5.png" alt="Graphic 3">
+    </div>
+
+     <div class="masonry-item" onclick="openGraphic('g4')">
+      <img src="images/work4/CouvertJournalier.png" alt="Graphic 4">
+    </div>
+
+    <!-- Add as many items as you want -->
+  </div>
+</section>
+
+<!-- Modals -->
+<div class="graphic-modal" id="g1">
+  <span class="close" onclick="closeGraphic('g1')">&times;</span>
+  <img src="images/work4/agencedevoyage3.png" class="modal-img">
+  <p class="modal-desc">Social Media Poster Design</p>
+</div>
+
+<div class="graphic-modal" id="g2">
+  <span class="close" onclick="closeGraphic('g2')">&times;</span>
+  <img src="images/work4/agencedevoyage2.png" class="modal-img">
+  <p class="modal-desc">Business Flyer</p>
+</div>
+
+<div class="graphic-modal" id="g3">
+  <span class="close" onclick="closeGraphic('g3')">&times;</span>
+  <img src="images/work4/clichetfinal5.png" class="modal-img">
+  <p class="modal-desc">Instagram Carousel Slide</p>
+</div>
+
+<div class="graphic-modal" id="g4">
+  <span class="close" onclick="closeGraphic('g4')">&times;</span>
+  <img src="images/work4/CouvertJournalier.png" class="modal-img">
+  <p class="modal-desc">Instagram Carousel Slide</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

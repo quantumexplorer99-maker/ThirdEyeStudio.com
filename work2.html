@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda Collections - Third Eye Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Third Eye Studio Logo">
+      <h1>Third Eye Studio</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Work2 Section -->
+  <section class="agenda-selection">
+    <h2>Choose Your Agenda</h2>
+    <div class="agenda-buttons">
+      <button onclick="showAgenda('bureau')">Bureau</button>
+      <button onclick="showAgenda('journalier')">Journalier</button>
+      <button onclick="showAgenda('planning')">Planning</button>
+      <button onclick="showAgenda('poche')">Poche</button>
+    </div>
+  </section>
+
+  <section id="agenda-display" class="agenda-display">
+    <p>Select an agenda to view details.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
